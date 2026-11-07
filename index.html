@@ -6,13 +6,20 @@
 <title>La Cocaína - Todo lo que debes saber</title>
 <style>
 *{margin:0;padding:0;box-sizing:border-box;font-family:Arial,Helvetica,sans-serif}
+html{scroll-behavior:smooth}
 body{background:#f2f2f2;color:#222;line-height:1.7}
-header{background:linear-gradient(180deg,#000,#1a1a1a);color:white;padding:70px 20px;text-align:center}
+header{background:linear-gradient(180deg,#000,#1a1a1a);color:white;padding:60px 20px 40px;text-align:center}
 header h1{font-size:48px}
 header p{font-size:18px;opacity:.9;margin-top:10px}
-.alerta{background:#ffcc00;color:#111;padding:16px;text-align:center;font-weight:bold;font-size:16px}
+.alerta{background:#ffcc00;color:#111;padding:14px;text-align:center;font-weight:bold;font-size:15px}
+.menu{background:#111;padding:14px 10px;text-align:center;position:sticky;top:0;z-index:20}
+.menu a{display:inline-block;background:white;color:#111;text-decoration:none;font-weight:bold;font-size:13px;padding:9px 13px;margin:4px;border-radius:20px}
+.menu a:hover{background:#ffcc00}
+.menu a.rojo{background:#c00;color:white}
+.menu a.verde{background:#0a7a42;color:white}
+.menu a.azul{background:#0a4daa;color:white}
 .container{max-width:950px;margin:25px auto;padding:0 20px}
-.card{background:white;border-radius:14px;padding:28px;margin-bottom:22px;box-shadow:0 4px 14px rgba(0,0,0,.1)}
+.card{background:white;border-radius:14px;padding:28px;margin-bottom:22px;box-shadow:0 4px 14px rgba(0,0,0,.1);scroll-margin-top:80px}
 .card h2{font-size:28px;margin-bottom:14px;border-left:7px solid #c00;padding-left:12px;color:#c00}
 .card h3{margin:18px 0 8px;color:#111;font-size:20px}
 .verde h2{color:#0a7a42;border-color:#0a7a42}
@@ -32,23 +39,44 @@ th{background:#111;color:white}
 .dato{background:#eef6ff;border-left:6px solid #0a4daa;padding:15px;border-radius:8px;margin:15px 0}
 .caja{display:grid;grid-template-columns:1fr 1fr;gap:15px;margin-top:12px}
 .mini{background:#f7f7f7;padding:15px;border-radius:10px}
+.volver{display:inline-block;margin-top:15px;background:#111;color:white;text-decoration:none;padding:8px 14px;border-radius:20px;font-size:13px;font-weight:bold}
 footer{text-align:center;padding:25px;color:#777;font-size:14px}
 @media(max-width:600px){header h1{font-size:34px}.caja{grid-template-columns:1fr}.foto{height:230px}}
 </style>
 </head>
 <body>
 
-<header>
+<header id="inicio">
 <h1>⚠️ LA COCAÍNA ⚠️</h1>
 <p>La guía completa: qué es, de dónde sale, por qué es ilegal, daños, historia y cómo pedir ayuda</p>
 <p style="margin-top:15px;font-size:14px;background:#ffcc00;color:#111;display:inline-block;padding:8px 16px;border-radius:20px;font-weight:bold;">Jesus Antonio Vicencio Morales | Grupo: 1-C</p>
+<p style="margin-top:15px;font-size:14px;opacity:.8;">👇 Pícale a un botón para ir directo al tema 👇</p>
 </header>
 
 <div class="alerta">⚠️ PÁGINA 100% EDUCATIVA - NO PROMUEVE EL CONSUMO | AYUDA: 911 y 800 911 2000 Línea de la Vida</div>
 
+<!-- MENÚ DE BOTONES -->
+<nav class="menu">
+<a href="#que-es">1. ¿Qué es?</a>
+<a href="#planta" class="verde">2. Planta Real 🌱</a>
+<a href="#historia">3. Historia ⏳</a>
+<a href="#cerebro">4. Cerebro 🧠</a>
+<a href="#legales" class="verde">5. Usos Legales ✅</a>
+<a href="#ilegales" class="rojo">6. Usos Ilegales ❌</a>
+<a href="#ilegal" class="azul">7. ¿Por qué es ilegal?</a>
+<a href="#obtiene">8. ¿Cómo se obtiene?</a>
+<a href="#danos" class="rojo">9. Daños ☠️</a>
+<a href="#sobredosis" class="rojo">10. Sobredosis 🚨</a>
+<a href="#comparativa">11. Comparativa</a>
+<a href="#mitos">12. Mitos ❌</a>
+<a href="#decir-no" class="azul">13. Decir NO 💪</a>
+<a href="#ayuda" class="rojo">14. Ayuda ❤️</a>
+<a href="#conclusion">15. Conclusión ✍️</a>
+</nav>
+
 <div class="container">
 
-<div class="card">
+<div class="card" id="que-es">
 <h2>1. ¿Qué es la cocaína?</h2>
 <p>La cocaína es un <b>estimulante muy potente del sistema nervioso central</b>. Es un alcaloide, o sea, una sustancia natural que está dentro de la hoja de coca.</p>
 <div class="dato"><b>¿Sabías?</b> La hoja de coca masticada NO es lo mismo que la cocaína. La cocaína es el químico ya extraído, purificado y concentrado en laboratorio. Por eso es mucho más fuerte y peligrosa.</div>
@@ -62,9 +90,10 @@ footer{text-align:center;padding:25px;color:#777;font-size:14px}
 <li><b>Cómo se consume:</b> Inhalada, fumada, inyectada o untada en encías</li>
 <li><b>Duración del efecto:</b> Inhalada 15 a 30 min, fumada como crack solo 5 a 10 min, por eso la gente quiere más y más</li>
 </ul>
+<a class="volver" href="#inicio">⬆ Volver al menú</a>
 </div>
 
-<div class="card verde">
+<div class="card verde" id="planta">
 <h2>2. La planta REAL de coca 🌱</h2>
 <p>Esta sí es la planta verdadera.</p>
 <img class="foto" src="https://commons.wikimedia.org/wiki/Special:FilePath/Colcoca03.jpg?width=900" alt="Planta real de coca">
@@ -83,9 +112,10 @@ footer{text-align:center;padding:25px;color:#777;font-size:14px}
 <li><b>Clima:</b> Le gusta el calor húmedo, selva y montaña tropical, entre 500 y 2000 metros de altura</li>
 </ul>
 <div class="dato"><b>Usos tradicionales en Sudamérica:</b> Desde hace más de 3000 años, pueblos indígenas la mastican (chacchar) o la toman en té (mate de coca) para el cansancio, el hambre, el frío y el mal de altura. Eso es cultural y legal en Bolivia y Perú, pero NO es lo mismo que consumir cocaína pura.</div>
+<a class="volver" href="#inicio">⬆ Volver al menú</a>
 </div>
 
-<div class="card naranja">
+<div class="card naranja" id="historia">
 <h2>3. Historia rápida ⏳</h2>
 <img class="foto" src="https://images.unsplash.com/photo-1461360370896-922624d12aa1?w=900&q=80" alt="Historia">
 <p class="pie-foto">La coca tiene miles de años de historia en Sudamérica.</p>
@@ -98,9 +128,10 @@ footer{text-align:center;padding:25px;color:#777;font-size:14px}
 <li><b>1961:</b> La ONU la pone en la Lista I de la Convención Única sobre Estupefacientes. O sea, prohibida casi en todo el planeta.</li>
 <li><b>1980s - hoy:</b> Auge del narcotráfico en Colombia y México, guerra contra las drogas, y millones de personas afectadas.</li>
 </ul>
+<a class="volver" href="#inicio">⬆ Volver al menú</a>
 </div>
 
-<div class="card morado">
+<div class="card morado" id="cerebro">
 <h2>4. ¿Cómo actúa en el cerebro? 🧠</h2>
 <img class="foto" src="https://images.unsplash.com/photo-1559757175-5700dde675bc?w=900&q=80" alt="Cerebro">
 <p class="pie-foto">El cerebro es el órgano más afectado por la cocaína.</p>
@@ -111,9 +142,10 @@ footer{text-align:center;padding:25px;color:#777;font-size:14px}
 <div class="mini"><b>😰 Después del bajón</b><br>Ansiedad, irritabilidad, paranoia, tristeza, cansancio extremo, ganas de más droga.</div>
 </div>
 <p style="margin-top:12px;">Con el tiempo el cerebro se acostumbra y ya no produce dopamina normal. Por eso la persona ya no siente placer sin droga. A eso se le llama <b>dependencia</b>.</p>
+<a class="volver" href="#inicio">⬆ Volver al menú</a>
 </div>
 
-<div class="card verde">
+<div class="card verde" id="legales">
 <h2>5. Usos Legales ✅ - Solo en hospital</h2>
 <img class="foto" src="https://images.unsplash.com/photo-1519494026892-80bbd2d6fd0d?w=900&q=80" alt="Hospital">
 <p class="pie-foto">Uso legal solo aplicado por un médico, en un hospital.</p>
@@ -123,9 +155,10 @@ footer{text-align:center;padding:25px;color:#777;font-size:14px}
 <li><b>Pero ya casi no se usa,</b> porque tenemos anestésicos más seguros y baratos como la lidocaína, que no causan adicción.</li>
 <li><b>¿Puedo comprarla en farmacia?</b> NO. Solo la puede manejar un médico en hospital, con permiso especial.</li>
 </ul>
+<a class="volver" href="#inicio">⬆ Volver al menú</a>
 </div>
 
-<div class="card">
+<div class="card" id="ilegales">
 <h2>6. Usos Ilegales ❌</h2>
 <img class="foto" src="https://images.unsplash.com/photo-1587854692152-cbe660dbde88?w=900&q=80" alt="Peligro">
 <p class="pie-foto">La droga de la calle nunca es pura.</p>
@@ -136,9 +169,10 @@ footer{text-align:center;padding:25px;color:#777;font-size:14px}
 <li><b>Speedball:</b> Mezcla de cocaína + heroína, muy mortal.</li>
 </ul>
 <div class="dato"><b>⚠️ LO PEOR:</b> La cocaína de la calle viene cortada / adulterada con: levamisol (medicina para animales), cafeína, anfetaminas, talco, y ahora hasta con <b>fentanilo</b>, que puede matarte con una dosis chiquita sin que te des cuenta.</div>
+<a class="volver" href="#inicio">⬆ Volver al menú</a>
 </div>
 
-<div class="card azul">
+<div class="card azul" id="ilegal">
 <h2>7. ¿Por qué es ilegal? ⚖️</h2>
 <ol>
 <li><b>1. Es muy adictiva:</b> Una de las drogas con más potencial de adicción que existe.</li>
@@ -150,16 +184,18 @@ footer{text-align:center;padding:25px;color:#777;font-size:14px}
 </ol>
 <h3>¿Y si solo traigo poquito?</h3>
 <p>En México hay una tabla de cantidades para consumo personal, pero eso NO significa que sea legal. Solo significa que en algunos casos te mandan a tratamiento en vez de cárcel, pero igual te detienen, te quitan la droga y te abren un expediente. Y si traes más de esa cantidad, es narcomenudeo y sí es cárcel.</p>
+<a class="volver" href="#inicio">⬆ Volver al menú</a>
 </div>
 
-<div class="card">
+<div class="card" id="obtiene">
 <h2>8. ¿Cómo se obtiene? 🏭</h2>
 <p>En esta página <b>NO</b> ponemos el paso a paso con cantidades y químicos, por seguridad y porque es ilegal. Solo la idea general para que entiendas:</p>
 <p>Se necesitan <b>cientos de kilos de hoja de coca</b> para sacar <b>1 kilo de cocaína</b>. En laboratorios clandestinos en la selva se machaca la hoja, se le agregan químicos tóxicos (gasolina, ácido, amoniaco, etc.), se extrae el alcaloide, se purifica y se cristaliza hasta que queda el polvo blanco.</p>
 <p>Ese proceso contamina ríos, tala selva, y deja residuos tóxicos que enferman a la gente que trabaja ahí, que muchas veces son niños y campesinos explotados.</p>
+<a class="volver" href="#inicio">⬆ Volver al menú</a>
 </div>
 
-<div class="card peligro">
+<div class="card peligro" id="danos">
 <h2>9. Daños y Efectos ☠️ - Lo más importante</h2>
 <img class="foto" src="https://images.unsplash.com/photo-1505751172876-fa1923c5c528?w=900&q=80" alt="Corazón">
 <p class="pie-foto">El corazón sufre muchísimo: se acelera, sube la presión y puede dar infarto.</p>
@@ -185,9 +221,10 @@ footer{text-align:center;padding:25px;color:#777;font-size:14px}
 <li><b>Mental:</b> Te vuelves desconfiado, agresivo, te alejas de tu familia</li>
 <li><b>Social:</b> Pierdes trabajo, escuela, dinero, amigos, familia, y terminas robando o vendiendo cosas para conseguir más</li>
 </ul>
+<a class="volver" href="#inicio">⬆ Volver al menú</a>
 </div>
 
-<div class="card peligro">
+<div class="card peligro" id="sobredosis">
 <h2>10. Sobredosis - ¿Cómo reconocerla? 🚨</h2>
 <p>La sobredosis puede pasarle a cualquiera, incluso la primera vez. Si ves esto, <b>llama al 911 de inmediato, no lo dejes solo:</b></p>
 <ul>
@@ -200,9 +237,10 @@ footer{text-align:center;padding:25px;color:#777;font-size:14px}
 <li>Se pone agresivo, ve cosas que no existen, grita</li>
 </ul>
 <p><b>¿Qué hacer?</b> 1) Llama al 911. 2) Acuéstalo de lado. 3) No le des agua, alcohol ni otras drogas. 4) Si deja de respirar, empieza RCP si sabes. 5) Quédate con él hasta que llegue la ambulancia. No te van a meter a la cárcel por pedir ayuda.</p>
+<a class="volver" href="#inicio">⬆ Volver al menú</a>
 </div>
 
-<div class="card morado">
+<div class="card morado" id="comparativa">
 <h2>11. Comparativa rápida</h2>
 <table>
 <tr><th>Aspecto</th><th>Hoja de coca natural</th><th>Cocaína pura / de la calle</th></tr>
@@ -212,9 +250,10 @@ footer{text-align:center;padding:25px;color:#777;font-size:14px}
 <tr><td>¿Legal?</td><td>En Perú y Bolivia es legal y cultural</td><td>Ilegal en casi todo el mundo, incluido México</td></tr>
 <tr><td>¿Riesgo de muerte?</td><td>Muy bajo</td><td>Alto, infarto, sobredosis, fentanilo adulterado</td></tr>
 </table>
+<a class="volver" href="#inicio">⬆ Volver al menú</a>
 </div>
 
-<div class="card">
+<div class="card" id="mitos">
 <h2>12. Mitos que te quieren vender ❌</h2>
 <ul>
 <li><b>"Solo un poquito no hace daño":</b> FALSO. Hay jóvenes sanos que han muerto de infarto la primera vez.</li>
@@ -224,9 +263,10 @@ footer{text-align:center;padding:25px;color:#777;font-size:14px}
 <li><b>"Si tomo alcohol se me baja":</b> FALSO. Alcohol + cocaína crea cocaetileno en el hígado, que es MÁS tóxico y dura más.</li>
 <li><b>"Los ricos la usan y no les pasa nada":</b> FALSO. Hay muchos famosos que murieron por sobredosis.</li>
 </ul>
+<a class="volver" href="#inicio">⬆ Volver al menú</a>
 </div>
 
-<div class="card azul">
+<div class="card azul" id="decir-no">
 <h2>13. ¿Cómo decir que NO? 💪</h2>
 <p>La mayoría de los chavos la prueban por presión de amigos, por curiosidad o para encajar. Estas frases sí funcionan:</p>
 <ul>
@@ -243,20 +283,23 @@ footer{text-align:center;padding:25px;color:#777;font-size:14px}
 <li>Dile a un adulto de confianza: maestro, papá, orientador</li>
 <li>No guardes el secreto si su vida está en riesgo</li>
 </ul>
+<a class="volver" href="#inicio">⬆ Volver al menú</a>
 </div>
 
-<div class="card ayuda">
+<div class="card ayuda" id="ayuda">
 <h2>14. ¿Necesitas ayuda? No estás solo ❤️</h2>
 <p>Si tú o alguien que conoces está usando cocaína, pedir ayuda NO es ser chismoso, es salvar una vida.</p>
 <p style="font-size:28px;margin:20px 0;line-height:1.5;">📞 911 - Emergencias<br>📞 800 911 2000 - Línea de la Vida (24 hrs, gratis y confidencial)<br>📞 800 911 2000 - CIJ Centros de Integración Juvenil</p>
 <p>También puedes ir a tu Centro de Salud, a tu escuela con el orientador, o hablar con tus papás. Sí se puede dejar, mucha gente lo ha logrado.</p>
+<a class="volver" href="#inicio" style="background:#ffcc00;color:#111;">⬆ Volver al menú</a>
 </div>
 
-<div class="card">
+<div class="card" id="conclusion">
 <h2>15. Conclusión ✍️</h2>
 <p>La cocaína viene de una planta que tiene miles de años de historia y que en su forma natural no es tan peligrosa, pero cuando se convierte en droga pura y concentrada, se vuelve una de las sustancias más adictivas y mortales que existen.</p>
 <p>No vale la pena arriesgar tu cerebro, tu corazón, tu familia, tu futuro y tu libertad por 15 minutos de euforia falsa.</p>
 <p><b>Infórmate, cuídate y cuida a los tuyos. Decir que NO también es ser valiente.</b></p>
+<a class="volver" href="#inicio">⬆ Volver al menú</a>
 </div>
 
 </div>
